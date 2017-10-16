@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/libs/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/build/intermediates/transforms/dex/debug/folders/1000/2/gson-2.7_882e7d94b177389f800c31ffc411543163b5d2b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6e0a0ab0b9f9fa5b65a0758b738be5816d371e60/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/libs/httpcore-4.1.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="592ffbd778cbcc2e2dc5d162b35c16d6a538fea2">
+        <dex dex="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpcore-4.1.4_bd9cebfdcc43e00969579293250e3c1f4ada1509/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/libs/xUtils.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a525a7f2e266f577629f68820a462a807c66eec7">
+        <dex dex="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/build/intermediates/transforms/dex/debug/folders/1000/2/xUtils_b534de675bf5c8d95bce39fdb190d16b9fad6308/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f4379fcd4c8c7c26c182caf83c966b620fb21fa4">
+        <dex dex="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_79a625fc229079e3fe414efe3db6440797603b2f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/libs/android-async-http-1.4.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
+        <dex dex="/Users/yinhao/AndroidStudioProjects/IntelligentAgriculture/app/build/intermediates/transforms/dex/debug/folders/1000/2/android-async-http-1.4.8_f484e4c72142ed713ae5cb7d2ac8928437c5eb11/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1d1d1"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/TitleStyle"
+            android:text="阀值设置" />
+
+        <ImageButton
+            android:id="@+id/fanhui_yuzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="5dp"
+            android:src="@mipmap/fanhuianniu" />
+
+        <View
+            style="@style/LineStyle"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/soil1_soil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="土壤温度值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_soil_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/soil1_soil"
+                android:text="200"
+                android:textColor="#0057ff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/soil2_soil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/tv_soil_temp"
+                android:text="土壤温度当前状态:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_soil_temp"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/soil2_soil"
+                android:src="@mipmap/p3" />
+
+            <TextView
+                android:id="@+id/zuixiao1_soil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/soil1_soil"
+                android:layout_marginTop="10dp"
+                android:text="最小值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_soil_temp_min"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/soil1_soil"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/zuixiao1_soil"
+                android:background="@drawable/shape_circle_edit_setting_bg"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/zuida1_soil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/soil1_soil"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/et_soil_temp_min"
+                android:paddingLeft="25dp"
+                android:text="最大值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_soil_temp_max"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/soil1_soil"
+                android:layout_marginTop="5dp"
+
+                android:layout_toRightOf="@id/zuida1_soil"
+                android:background="@drawable/shape_circle_edit_setting_bg"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <View
+                style="@style/LineStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/shi1_soil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="土壤湿度值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_soil_humi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/shi1_soil"
+                android:text="200"
+                android:textColor="#0057ff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shi2_soil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/tv_soil_humi"
+                android:text="土壤湿度当前状态:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_soil_humi"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/shi2_soil"
+                android:src="@mipmap/p3" />
+
+            <TextView
+                android:id="@+id/tv_soil_humi_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shi1_soil"
+                android:layout_marginTop="10dp"
+                android:text="最小值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_soil_humi_min"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/shi1_soil"
+                android:layout_marginTop="5dp"
+
+                android:layout_toRightOf="@id/tv_soil_humi_min"
+                android:background="@drawable/shape_circle_edit_setting_bg"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/zuida_soil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shi1_soil"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/et_soil_humi_min"
+                android:paddingLeft="25dp"
+                android:text="最大值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_soil_humi_max"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/shi1_soil"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/zuida_soil"
+                android:background="@drawable/shape_circle_edit_setting_bg"
+
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <View
+                style="@style/LineStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_soil_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:text="确定"
+        android:textColor="#000"
+        android:textSize="20sp" />
+</LinearLayout>
+

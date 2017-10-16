@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1d1d1"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_marginTop="6dp"
+            android:text="阀值设置" />
+
+        <ImageButton
+
+            android:id="@+id/fanhui_shoudong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="5dp"
+            android:src="@mipmap/fanhuianniu" />
+
+        <View
+            style="@style/LineStyle"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/air1_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空气温度值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_air_temp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/air1_air"
+                android:text="200"
+                android:textColor="#0057ff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/air2_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/tv_air_temp_value"
+                android:text="空气温度当前状态:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_air_temp_state"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/air2_air"
+                android:src="@mipmap/p3" />
+
+            <TextView
+                android:id="@+id/zuixiao1_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/air1_air"
+                android:layout_marginTop="10dp"
+                android:text="最小值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_air_temp_min"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/air1_air"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/zuixiao1_air"
+                android:background="@drawable/shape_circle_edit_setting_bg"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/zuida1_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/air1_air"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/et_air_temp_min"
+                android:paddingLeft="25dp"
+                android:text="最大值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_air_temp_max"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/air1_air"
+                android:layout_marginTop="5dp"
+
+                android:layout_toRightOf="@id/zuida1_air"
+                android:background="@drawable/shape_circle_edit_setting_bg"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <View
+                style="@style/LineStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/shi1_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空气湿度值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_air_humi_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/shi1_air"
+                android:text="200"
+                android:textColor="#0057ff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shi2_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/tv_air_humi_value"
+                android:text="空气湿度当前状态:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_air_humi_state"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/shi2_air"
+                android:src="@mipmap/p3" />
+
+            <TextView
+                android:id="@+id/zuixiao_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shi1_air"
+                android:layout_marginTop="10dp"
+                android:text="最小值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_air_humi_min"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/shi1_air"
+                android:layout_marginTop="5dp"
+
+                android:layout_toRightOf="@id/zuixiao_air"
+                android:background="@drawable/shape_circle_edit_setting_bg"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/zuida_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shi1_air"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/et_air_humi_min"
+                android:paddingLeft="25dp"
+                android:text="最大值:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_air_humi_max"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/shi1_air"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/zuida_air"
+                android:background="@drawable/shape_circle_edit_setting_bg"
+
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <View
+                style="@style/LineStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_air_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:text="确定"
+        android:textColor="#000"
+        android:textSize="20sp" />
+</LinearLayout>
+

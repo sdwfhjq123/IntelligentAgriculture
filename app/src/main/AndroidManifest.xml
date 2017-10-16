@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yinhao.intelligentagriculture">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 获取网络的权限 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_nong"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.activity.HomeActivity" />
+        <activity android:name=".activity.activity.CO2Activity" />
+        <activity android:name=".activity.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.activity.CO2SettingActivity" />
+        <activity android:name=".activity.activity.AirSettingActivity" />
+        <activity android:name=".activity.activity.SoilSettingActivity" />
+        <activity android:name=".activity.activity.HandControlActivity" />
+        <activity android:name=".activity.activity.AirActivity" />
+        <activity android:name=".activity.activity.LightActivity" />
+        <activity android:name=".activity.activity.SoilActivity" />
+        <activity android:name=".activity.activity.LightSettingActivity"></activity>
+    </application>
+
+</manifest>
